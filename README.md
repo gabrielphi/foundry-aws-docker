@@ -84,6 +84,20 @@ Logo após criar o bucket, anexe a politica abaixo
 ]
 ```
 
+## aws.json
 
+No arquivo aws.json neste repositorio, colocar as configurações corretas, a access key você consegue indo no usuario que você criou, um pouco para baixo terá chaves de acesso e você vai clicar em criar chaves de acesso. Dentre todas as opções você vai selecionar **Serviço de terceiros** e baixar as chaves para sua maquina.
+
+Exemplo:
+```
+{
+    "region": "us-east-1",
+    "buckets": ["meuprimeiros3-bucket"],
+    "credentials": {
+      "accessKeyId": "<acces key>",
+      "secretAccessKey": "<secret access key>"
+    }
+}
+```
 
 Tudo pronto, sem dificuldades.
