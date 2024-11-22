@@ -1,0 +1,27 @@
+secrets:
+  config_json:
+    file: secrets.json
+
+services:
+  foundry:
+    image: felddy/foundryvtt:release-12.329.0
+    hostname: foundry3
+    environment:
+      TIMEZONE: America/Sao_Paulo
+      FOUNDRY_AWS_CONFIG: /data/Config/aws.json
+    volumes:
+      - ./foundry-data-gabriel:/data
+      - type: bind
+        source: ./config
+        target: /data/Config
+    secrets:
+      - source: config_json
+        target: config.json
+    networks:
+      - shared-network
+networks:
+  shared-network:
+    external: true
+
+volumes:
+  foundry-data-gabriel:

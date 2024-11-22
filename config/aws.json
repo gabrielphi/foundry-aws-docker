@@ -1,0 +1,8 @@
+{
+    "region": "<region>",
+    "buckets": ["<bucket name>"],
+    "credentials": {
+      "accessKeyId": "<acces key>",
+      "secretAccessKey": "<secret access key>"
+    }
+}
