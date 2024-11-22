@@ -53,7 +53,7 @@ Logo após criar o bucket, anexe a politica abaixo
             "Principal": "*",
             "Action": "s3:GetObject",
             "Resource": [
-                "arn:aws:s3:::<bucket name>l",
+                "arn:aws:s3:::<bucket name>",
                 "arn:aws:s3:::<bucket name>/*"
             ]
         }
